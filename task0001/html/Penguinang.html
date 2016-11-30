@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/StyleSheet.css" />
+</head>
+<body>
+    <img class="img" id="img" src="../image/巴卫.png" display="block" style="z-index:1"/>
+    <div >
+        <input type="button" class="unselected" id="小新" style="top:150px; z-index:2" value="小新"/>
+        <input type="button" class="unselected" id="巴卫" style="top:350px ;z-index:2" value="巴卫" />
+    </div>
+    <script>
+        var btns = document.getElementsByTagName("input");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].onclick = function () {
+                for (var j = 0; j < btns.length; j++) {
+                    btns[j].setAttribute("class", "unselected");
+                }
+                img.setAttribute("src", "../image/" + this.id + ".png");
+                this.setAttribute("class", "selected");
+            }
+        }
+    </script>
+    <!--<img src="../image/巴卫.png"/>
+    <script>
+        var btns = document.getElementsByTagName("input");
+        btns[0].onclick = function () {
+            img.setAttribute("src", "../image/巴卫.png");
+        }
+        btns[1].onclick = function () {
+            img.setAttribute("src", "../image/小新.png");
+        }
+    </script>-->
+   <!-- <script>
+       var btn1 = document.getElementById("bawei");
+        var btn2 = document.getElementById("xiaoxin");
+        btn1.onclick = function () {
+            img.setAttribute("src", "../image/巴卫.png");
+        }
+        btn2.onclick = function () {
+            img.setAttribute("src", "../image/小新.png");
+        }
+
+    </script>-->
+</body>
+</html>
