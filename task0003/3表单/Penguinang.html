@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        body{
+            background-color:#f7f7f7;
+        }
+        .head{
+            background-color:#2695d0;
+            font-size:40px;
+            color:#ffffff;
+            text-align:center;
+            width:100%;
+        }
+        .question{
+            font-weight:900;
+            font:bold 30px arial,verdana;
+        }
+        .question-block{
+            margin:30px 0;
+        }
+        .option{
+            border:1px solid #c7bdbd;
+            vertical-align:middle;
+            line-height:30px;
+            padding:7px 10px;
+            margin:20px auto;
+        }
+        .check{
+            height:20px;
+        }
+        .division{
+            background-color:#c7bdbd;
+            height:1px;
+            width:100%;
+            margin:7px 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="head">有关箱包购买的小调查</div>
+    <form>
+        <div class="question-block">
+            <span class="question">1、您的性别是？</span><span style="color:red ">*</span>
+                <div class="option">
+                    <label>
+                        <input type="radio" name="sex" value="a"/>a.男
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="sex" value="b"/>b.女
+                    </label>
+                </div>
+        </div>
+        <div class="question-block">
+            <span class="question">2、您的年龄是？</span><span style="color:red ">*</span>
+                <div class="option">
+                    <label>
+                        <input type="radio" name="age" value="a"/>a.14~24
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="age" value="b"/>b.25~35
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="age" value="c"/>c.36~46
+                    </label>
+                </div>
+            </div>
+        <div class="question-block">
+            <span class="question">3、您的职业是？</span><span style="color:red ">*</span>
+                <div class="option">
+                    <label>
+                        <input type="radio" name="job" value="a"/>a.学生
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="job" value="b"/>b.个体户
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="job" value="c"/>c.公司职员
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="job" value="d"/>d.商务人士
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="job" value="e"/>e.其他
+                    </label>
+                </div>
+            </div>
+        <div class="question-block">
+            <span class="question">4、您的月收入是多少？</span><span style="color:red ">*</span>
+                <div class="option">
+                    <label>
+                        <input type="radio" name="income" value="a"/>a.3000以下
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="income" value="b"/>b.3000~5500
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="income" value="c"/>c.5500~8000
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="income" value="d"/>d.8000以上
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="income" value="e"/>e.基本无
+                    </label>
+                </div>
+            </div>
+        <div class="question-block">
+            <span class="question">5、您喜欢什么款式的箱包</span><span style="color:red ">*</span><span style="color:#1929dd" class="question">[多选题]</span>
+                <div class="option">
+                    <label>
+                        <input type="checkbox" name="kind" value="a"/>a.手提包
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="kind" value="b"/>b.单肩包
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="kind" value="c"/>c.双肩包
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="kind" value="d"/>d.多功能包
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="kind" value="e"/>e其他
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="kind" value="f"/>f.杂物包
+                    </label>
+                </div>
+            </div>
+        <div class="question-block">
+            <span class="question">6、您喜欢什么风格的箱包</span><span style="color:red ">*</span><span style="color:#1929dd" class="question">[多选题]</span>
+                <div class="option">
+                    <label>
+                        <input type="checkbox" name="style" value="a"/>a.成熟稳重的商务风
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="style" value="b"/>b.干净单调的简约风
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="style" value="c"/>c.绚丽个性的时尚风
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="style" value="d"/>d.无所谓，只要能用就行
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="style" value="e"/>e其他
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="style" value="f"/>f.朴实经典的怀旧风
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="style" value="g"/>g.神秘诱人的异国风
+                    </label>
+                </div>
+            </div>
+        <div class="question-block">
+            <span class="question">7、您喜欢的箱包品牌是</span><span style="color:red ">*</span><span style="color:#1929dd" class="question">[多选题]</span>
+                <div class="option">
+                    <label>
+                        <input type="checkbox" name="branding" value="a"/>a.爱华仕
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="branding" value="b"/>b.乐上
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="branding" value="c"/>c.瑞士军刀
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="branding" value="d"/>d.新秀丽
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="branding" value="e"/>e其他
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="branding" value="f"/>f.爱马仕
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="branding" vlaue="g"/>g.路易-威登
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="branding" value="h"/>h.知名运动产品的包
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="branding" value="i"/>i.知名科技产品旗下的包
+                    </label>
+                </div>
+            </div>
+        <div class="question-block">
+            <span class="question">8、您购买箱包的主要用途是</span><span style="color:red ">*</span><span style="color:#1929dd" class="question">[多选题]</span>
+                <div class="option">
+                    <label>
+                        <input type="checkbox" name="aim" value="a"/>a.赠送
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="aim" value="b"/>b.旅行
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="aim" value="c"/>c.出差
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="aim" value="d"/>d.收藏
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="aim" value="e"/>e其他
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="aim" value="f"/>f.上学
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="aim" value="g"/>g.收纳，装随身物品
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="aim" value="h"/>h.装杂物
+                    </label>
+                </div>
+            </div>
+        <div class="question-block">
+            <span class="question">9、您多久换一次包</span><span style="color:red ">*</span>
+                <div class="option">
+                    <label>
+                        <input type="radio" name="change" value="a"/>a.3个月以内
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="change" value="b"/>b.半年
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="change" value="c"/>c.一年
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="change" value="d"/>d.用到坏
+                    </label>
+                </div>
+            </div>
+        <div class="question-block">
+            <span class="question">10、您选择包包时首先考虑的是</span><span style="color:red ">*</span>
+                <div class="option">
+                    <label>
+                        <input type="radio" name="influence" value="a"/>a.外观
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="influence" value="b"/>b.价格
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="influence" value="c"/>c.质量
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="influence" value="d"/>d.知名度
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="influence" />e.实用性
+                    </label>
+                </div>
+            </div>
+        <div class="question-block">
+            <span class="question">11、您可以接受的价位是</span><span style="color:red ">*</span>
+                <div class="option">
+                    <label>
+                        <input type="radio" name="price" value="a"/>a.100以内
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="price" value="b"/>b.100~500
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="price" value="c"/>c.500~900
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="price" value="d"/>d.900~1300
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="price" value="e"/>e.1300以上
+                    </label>
+                </div>
+            </div>
+        <div class="question-block">
+            <span class="question">12、你觉得现在市场上面箱包不足之处有</span><span style="color:red ">*</span><span style="color:#1929dd" class="question">[多选题]</span>
+                <div class="option">
+                    <label>
+                        <input type="checkbox" name="shortcoming" value="a"/>a.款式单一，外观都差不多
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="shortcoming" value="b"/>b.功能太少，只能用来装东西
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="shortcoming" value="c"/>c.安全性不高
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="shortcoming" value="d"/>d.品牌吸引力不够
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="shortcoming" value="e"/>e其他
+                    </label>
+                </div>
+            </div>
+        <div class="question-block">
+            <span class="question">13、一般通过什么途径了解箱包</span><span style="color:red ">*</span><span style="color:#1929dd" class="question">[多选题]</span>
+                <div class="option">
+                    <label>
+                        <input type="checkbox" name="way" value="a"/>a.电视广告
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="way" value="b"/>b.朋友宣传
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="way" value="c"/>c.互联网
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="way" value="d"/>d.其他
+                    </label>
+                </div>
+            </div>
+        <div class="question-block">
+            <span class="question">14、您喜欢哪种材质的箱包</span><span style="color:red ">*</span><span style="color:#1929dd" class="question">[多选题]</span>
+                <div class="option">
+                    <label>
+                        <input type="checkbox" name="material" value="a"/>a.皮革
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="material" value="b"/>b.棉麻
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="material" value="c"/>c.多种材质结合
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="material" value="d"/>d.其他
+                    </label>
+                </div>
+            </div>
+        <div class="question-block">
+            <span class="question">15、您喜欢在哪里购买箱包</span><span style="color:red ">*</span><span style="color:#1929dd" class="question">[多选题]</span>
+                <div class="option">
+                    <label>
+                        <input type="checkbox" name="buy" value="a"/>a.网上
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="buy" value="b"/>b.实体店
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="checkbox" name="buy" value="c"/>c.其他
+                    </label>
+                </div>
+            </div>
+        <div class="question-block">
+            <span class="question">16、如果您有男（女）朋友，您希望你们一起背情侣包吗？</span><span style="color:red ">*</span>
+                <div class="option">
+                    <label>
+                        <input type="radio" name="cp" value="a"/>a.非常渴望
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="cp" value="b"/>b.比较喜欢
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="cp" value="c"/>c.可以接受
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="cp" value="d"/>d.不怎么喜欢
+                    </label>
+                    <div class="division"></div>
+                    <label>
+                        <input type="radio" name="cp" value="e"/>e.非常讨厌
+                    </label>
+                </div>
+            </div>
+        <button type="submit" class="head">提交</button>
+    </form>
+</body>
+</html>
