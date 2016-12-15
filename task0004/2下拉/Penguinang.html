@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        ul {
+            list-style: none;
+        }
+        .nav > li {
+            float: left;
+        }
+        ul a {
+            display: block;
+            text-decoration: none;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            background-color: #2f3e45;
+        }
+         .nav > li:first-child a {
+             border-radius: 10px 0 0 10px; 
+        }
+        .nav > li:last-child a {
+            border-radius: 0 10px 10px 0;
+        }
+        .drop-down {
+            /*position: relative;*/
+        }
+        .drop-down-content {
+            padding: 0;
+            display: none;
+            /*position: absolute;*/
+        }
+        h3 {
+            font-size: 30px;
+            clear: both;
+        }
+        .drop-down-content li:hover a {
+            background-color: red;
+        }
+         .nav .drop-down:hover .drop-down-content {
+            display: block;
+        }
+</style>
+    
+</head>
+
+<body>
+         <ul class="nav">
+             <li class="drop-down">
+                 <a href="#">性别</a>
+                 <ul class="drop-down-content">
+                     <li><a href="#">男</a></li>
+                     <li><a href="#">女</a></li>
+                 </ul>
+             </li>
+        <li class="drop-down">
+            <a href="#">年级</a>
+                         <ul class="drop-down-content">
+                <li><a href="#">大一</a></li>
+                <li><a href="#">大二</a></li>
+                <li><a href="#">大三</a></li>
+                <li><a href="#">大四</a></li>
+            </ul>
+            </li>
+    </ul>
+</body>
+</html>
