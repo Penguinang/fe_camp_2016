@@ -1,0 +1,73 @@
+﻿body {
+            background-color: #dbd1d1;
+            color: #2a70ee;
+        }
+
+        h1 {
+            text-align: center;
+            font-size:4vw;
+        }
+
+        .divleft {
+            position: absolute;
+
+            text-align:center;
+            left: 0;
+            background-color: #0094ff;
+            width: 33%;
+            height: 1000px;
+        }
+        
+        .basic-information {
+            color: #ffffff;
+            margin: auto;
+            font-size:2vw;
+        }
+
+        #img-me{    
+            max-width:50%;
+        }
+        
+        .divmid {
+            position: absolute;
+            left: 33%;
+            height: 1000px;
+            width: 33%;
+            background-color: #ffffff;
+            color: #4b4747;
+        }
+        .divmid p,.divmid ul,.divright ul{
+            font-size:2vw;
+        }
+        h2{
+            font-size:3vw;
+        }
+        .school{
+            text-align:left;
+            position:relative;
+            left:2em;
+        }
+
+        #name {
+            font-size: 8vw;
+            text-align: center;
+            margin-bottom: 20px;
+            
+        }
+        .divright {
+            padding: 100px 0;
+            position: absolute;
+            left: 66%;
+            background-color: #edca43;
+            width: 34%;
+            height: 800px;
+            color: #4b4747;
+            text-align:center;
+        }
+
+        div > p {
+            text-align: center;
+        }
+        .divright ul {
+            text-align:left;
+        }
