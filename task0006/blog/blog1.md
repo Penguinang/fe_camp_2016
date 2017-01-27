@@ -1,0 +1,66 @@
+ 在国内，“前端开发”这个名词逐步被熟知，“前端开发”这个职位越来越被企业重视，表明国内的Web前端开发正在慢慢走向成熟，更好地学习提高自身的前端开发技术能力是必须的，整理8个国内优秀的前端开发设计网站给大家，也希望能看到你推荐的中文前端开发网站和社区。
+1, 蓝色理想
+
+http://www.blueidea.com/
+
+诞生于1999年10月的蓝色理想，以建设网站设计与开发人员之家为宗旨，以介绍网络开发技术与网站创作设计交流为主要内容，是国内最大的设计类站点之一。
+
+
+2, W3School
+
+http://www.w3school.com.cn/index.html
+
+W3School是最完善的在线教程站，包括 XHTML教程、XML教程JavaScript & AJAX、网站构建等前端开发人员必备的系统性学习教材。
+
+
+3, 前端观察
+
+http://www.qianduan.net/
+
+前端观察是一个纯粹的前端技术分享网站，本站的目的是为前端技术人员提供所需的资讯及资源，挖掘国内优秀的原创设计及内容，加以高度的整理。
+
+
+4, CSS88
+
+http://www.css88.com/
+
+CSS88专注前端开发，关注用户体验，是一个资深的Web前端开发站，不仅传播前端技术，更重要的是关注前端设计从业者的生存状态，有多个开放的前端交流群。
+
+
+5, CssRain
+
+http://www.cssrain.cn/
+
+CssRain实用的前端技术信息，原创和搜集前端开发中细节的内容，一本jQuery新书推荐<<锋利的jQuery>>你值得拥有。
+
+
+6, 我爱CSS
+
+http://www.52css.com/
+
+我爱CSS，致力于Web标准在中国的应用和发展，提供CSS和XHTML学习教程。
+
+
+7, iJavaScript
+
+http://www.ijavascript.cn/
+
+iJavaScript致力于JavaScript信息的共享，提供JavaScript基础教程、AJAX技术及JavaScript框架的学习和应用。
+
+
+8, OKAJAX
+
+http://www.okajax.com/
+
+OKAJAX是以ajax技术为主，涉及网站建设、网络编程、网页设计、网页特效、服务器技术、资源下载等的综合性网站。
+
+
+
+这是个人的一些整理分享，如果还有你认为非常优秀的前端开发设计资源类网站没有出现在列表中，请留言告诉我，我会及时地对此进行补充。
+
+
+
+
+
+转自【http://www.bbon.cn/2009/11/8-excellence-front-end-development-and-design-chinese-sites.html】
+

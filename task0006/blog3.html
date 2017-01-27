@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/article-list.css" />
+    <link rel="stylesheet" href="css/article-main.css" />
+    <title>前端关于图片的优化</title>
+</head>
+<body>
+    <nav>
+        <a class="nav--index" href="index.html"><img src="index.jpg" class="nav--img" /></a>
+        <ul class="nav--ul">
+            <li class="nav--li"><a >原创</a></li>
+            <li class="nav--li"><a href="index.html">转载</a></li>
+            <li class="nav--li"><a href="index.html">精选</a></li>
+        </ul>
+    </nav>
+    <ul class="list--ul">
+
+        <li class="list--li first"><a href="blog1.html"><shadow class="list--li--shadow"></shadow><figcaption class="list--caption">前端程序员必上的6个优秀的中文前端设计网站</figcaption></a></li>
+        <li class="list--li second"><a href="blog2.html"><shadow class="list--li--shadow"></shadow><figcaption class="list--caption">我的前端之路</figcaption></a></li>
+        <li class="list--li third"><a href="blog3.html"><shadow class="list--li--shadow"></shadow><figcaption class="list--caption">前端关于图片的优化</a></figcaption></li>
+        <li class="list--li forth"><a href="blog4.html"><shadow class="list--li--shadow"></shadow><figcaption class="list--caption">如果要学习web前端开发，需要学习什么？</figcaption></a></li>
+    </ul>
+    <main>
+        <h1 class="share--tittle">前端关于图片的优化</h1>
+        <article>
+            <!--引语-->
+            <p>
+                <span class="text--span">
+                    在某些项目中会需要加载大量的图片，包括含有图片的资源，或是网站制作时需要用到的图片。
+                    会大大的影响加载速度。这里总结了几种前端关于图片优化的方法：
+                </span>
+            </p>
+            <!--第一段-->
+            <p>
+                <h2>1 使用恰当的图片格式：</h2>
+            <span class="text--span">常见的图片格式有png\jpg\gif等，有的修饰图片或者有特殊要求的图片例如背景要求透明可能
+                更适合无损压缩的png,而绝大多数的图片用jpg格式的就可以满足需求了。GIF格式的多用于动画，不过动画也建议用vi
+                deo标签或者视频形式，svg也可。</span>
+            <!--第二段-->
+            <p>
+                <h2>2 尽量不用图片</h2>
+                <span class="text--span">
+                    比如在页面开发时某些图片或者修饰可以通过给特定的标签添加样式来实现，就省去了图片的引入。
+                    常见的例如 三角形，圆形，不规则放置的直线，半透明，阴影，边框，渐变等等。
+                </span>
+            </p>
+            <!--第三段-->
+            <p>
+                <h2>3 图片的引入方式的选择</h2>
+                <span class="text--span">
+                    我们知道前端页面的图片引入方式主要有两大类：<br />
+                    1 通过img标签<br />
+                    2 通过css的background属性<br />
+                    3 应该还有其他的方法，有待探索<br />
+                    这里可以根据实际情况来选择合适的引入方法。
+                </span>
+            </p>
+            <!--第四段-->
+            <p>
+                <h2>4 图片压缩</h2>
+                <span class="text--span">
+                    图片的清晰度和大小能够满足一般的需求就可以了，没必要太大，这个时候可以通过各种图片压缩器，将图片大小尽可能的压缩，减小网站加载图片的容量大小，提高加载速度。
+                    这里分享一款压缩工具：
+                </span>
+            </p>
+            <!--第五段-->
+            <p>
+                <h2>5 资源的lazyload或postpone</h2>
+                <span class="text--span">
+                    lazyload：延迟到其他资源下载完成后再加载<br />
+                    postpone：延迟到元素可见再加载。
+                </span>
+            </p>
+            <p><span class="text--span">针对某些需要大量同步加载的图片数据可以用延迟可见或
+            加载的办法来使网页加载图片时更优化合理。但是这种策略，目前都需要对应的脚本。</span></p>
+            <!--第六段-->
+            <p>
+                <h2>6 字体图标</h2>
+                <span class="text--span">
+                    针对网页中需要实现的图标或者同种图标的不同颜色，可以用字体图标的形式，使用方便简单
+                </span>
+            </p>
+            <p>
+                <h2>7 使用data url。</h2>
+                <span class="text--span">资源内嵌于CSS或HTML中，而不必单独请求。注意，多个地方都要使用的
+                资源不一定适合用此优化方式，因为图片数据重复多了，增加流量。另外许多浏览器对data url有长度限制，注意资源的大小。
+                </span>
+            </p>
+            <p>
+                <h2>8 css sprite</h2>                
+            </p>
+            <p><span class="text--span">    以上是个人在做项目时使用总结的东西，关于图片的优化方法还在继续探索中。。</span></p>
+        </article>
+        <i class="information author">千与千寻* </i>
+        <i class="information time">2017/1/24</i>
+    </main>
+    <div class="division line"></div>
+    <p class="copyright">Penguinang copyright @2017</p>
+</body>
+</html>

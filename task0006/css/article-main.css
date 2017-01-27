@@ -1,0 +1,74 @@
+﻿
+/*文章主体*/
+main{
+    position:relative;
+    margin-top:10em;
+    margin-left:20em;
+    margin-right:10em;
+    margin-bottom:5em;
+    min-height:40em;
+    z-index:0;
+    padding:10px;
+    min-width:20em;
+}
+main{
+    border:5px solid lightblue;
+}
+article{
+    margin-bottom:50px;
+    padding:1em;
+}
+.article--img{
+    display:block;
+}
+.share--tittle{
+    text-align:center;
+}
+.share--tittle:before{
+    content:' ';
+    background-image:url(../ico/main--tittle.gif);
+    display:inline-block;
+    background-size:cover;
+    width:19px;
+    height:19px;
+    margin:0 3px -3px 0;
+}
+.text--span{
+    padding-left:2em;
+    display:block;
+    margin:1em 0;
+}
+.ul--li{
+    list-style:initial;
+}
+.information{
+    display:inline;
+    color:#a9a9a9;
+    position:absolute;
+    bottom:0;
+}
+.author{
+    left:3em;
+}
+.author:before{
+    content:"作者:";
+}
+.time:before{
+    content:"日期:";
+}
+.time{
+    right:3em;
+}
+.copyright{
+    text-align:center;
+    padding:0.5em 5em;
+    color:white;
+    background-color:rgba(0,0,0,0.3);
+}
+.line{
+    height:1px;
+    width:100%;
+}
+.division {
+    background-color: white;
+}
