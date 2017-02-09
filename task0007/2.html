@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/css.css" />
+</head>
+<body>
+    <div>
+        <span>请输入</span>
+        <input type="text" />
+        <button onclick="f()">确定</button>
+    </div>
+    <span>结果是</span>
+    <input id="result" type="text" />
+
+    <script>
+        var x = document.getElementsByTagName("input");
+        var result = document.getElementById("result");
+        function f(){
+            let v = x[0].value;
+            let ch="";
+            let len = v.length;
+            var intre=new Array();
+            let n=0;
+            for(let i=0;i<len;i++)
+            {
+                if(v.charAt(i)==',')
+                {
+                    if (check(n,ch,intre))
+                    {
+                        intre[n] = ch;
+                        n++;
+                    }
+                    ch = "";
+                }
+                else(ch+=v.charAt(i));
+            }
+            if (check(n, ch, intre))
+            {
+                intre[n] = ch;
+                n++;
+            }
+            result.value += intre[0];
+            for(i=1;i<n;i++)
+            {                
+                result.value+=','+intre[i];
+            }
+        }
+            function check(n,ch,intre) {
+                for (let k = 0; k < n ; k++) {
+                    if (intre[k] == ch)
+                        return 0;
+                }
+                return 1;
+            }
+    </script>
+</body>
+
+</html>

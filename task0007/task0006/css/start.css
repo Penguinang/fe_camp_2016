@@ -1,0 +1,20 @@
+
+body{
+    /*transition:bottom 2s ease-in;*/
+
+    /*opacity:100;*/
+
+    /*transform: rotatey(0deg);*/
+
+    bottom:0;
+
+}
+main {
+    /*4*/
+    position: relative;
+    right: 0vw;
+    transition: right 1s ease-in;
+}
+*{
+    /*transform:rotatey(0deg);*/
+}

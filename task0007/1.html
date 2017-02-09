@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/css.css" />
+</head>
+<body>
+    <div>
+        <span>请输入</span>
+        <input type="text" />
+        <button onclick="f()">确定</button>
+    </div>
+    <span>结果是</span>
+    <input id="result" type="text"/>
+    
+    <script>
+        var x = document.getElementsByTagName("input");
+        var result = document.getElementById("result");
+        function f() {
+            let re = "";
+            let v = x[0].value;
+            let len = v.length;
+            let ch;
+            for (let i = 0; i <= len - 1; i++)
+            {
+                ch = v.charAt(i).toUpperCase();
+                if (ch == '-')
+                    continue;
+                re += ch;
+            }
+            result.value = re;
+        }
+    </script>
+</body>
+
+</html>

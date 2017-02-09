@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <table>
+        <tr>
+            <th>时间</th>
+        </tr>
+    </table>
+    <input onclick="cal()" value="计算" type="button" />
+<script>
+    var month = new Array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+    var wed = new Array();
+    var date = new Date();
+    var date2 = new Date();
+    date2.setMonth(1);
+    date2.setDate(1);
+    var distance = function (date1,date2)
+    {
+        let signal;
+        if(date1.getMonth()>date2.getMonth())
+        {
+            var date3=date1;
+            date1=date2;
+            date2=date3;
+            signal=-1;
+        }
+        else signal=1;
+
+        let dis=0;
+        let month1=date1.getMonth();
+        let month2=date2.getMonth();
+        for(;month1<month2;month1++)
+        {
+            dis+=month[month1];
+        }
+
+        dis+=date2.getDate()-date1.getDate();
+        return dis*signal;
+    }
+    function cal()
+        /*
+         *算2月1日到当前的时间差
+         * 算2月1日到周三的时间差
+         */
+    {
+        let day = date.getDay();
+        let dis=distance(date,date2);
+        let day1=(day+dis)%7;
+        let left;
+        if(day1>3)
+            left=3+7-day1;
+        else
+            left = 3-day1;
+        let act = new Array(4);
+        for(let i=0;i<=3;i++)
+        {
+            act[i]=new Array(2);
+            act[i][0]='Month 2'+'Day'+(1+left+i*7);
+            act[i][1]=(dis+left+i*7)+'Days Left';
+        }
+        console.log(act);
+        return act;
+
+    }
+</script>
+</body>
+</html>

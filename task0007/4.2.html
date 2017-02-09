@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leetcode的习题2</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/css.css" />
+</head>
+
+<body>
+<div>
+    <h1>原题</h1>
+    <p>Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.</p>
+    <h1>解</h1>
+    <div>
+        <lable>输入:<input id="input" /></lable>
+        <button id="button">结果</button>
+        <input id="result" />
+    </div>
+</div>
+<script>
+    var button =document.getElementById('button');
+    var result = document.getElementById('result');
+    button.onclick=function()
+    {
+        let input = Number(document.getElementById('input').value);
+
+        let pluse=1;
+        for(;pluse<=input;)
+            pluse<<=1;
+        let com = pluse-1-input;
+        console.log(com);
+        result.value=com;
+    }
+</script>
+</body>
+</html>

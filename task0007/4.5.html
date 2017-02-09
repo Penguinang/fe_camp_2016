@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leetcode的习题1</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/css.css" />
+</head>
+
+<body>
+<div>
+    <h1>原题</h1>
+    <p>
+        Given a binary array, find the maximum number of consecutive 1s in this array.</p>
+    <h1>解</h1>
+    <div>
+        <lable>输入请以逗号隔开:<input id="input" /></lable>
+        <button id="button">结果</button>
+        <input id="result" />
+    </div>
+</div>
+<script>
+    var button =document.getElementById('button');
+    var result = document.getElementById('result');
+    button.onclick=function()
+    {
+        let input = new Array();
+        input=document.getElementById('input').value;
+
+        let max=0,signal=1,last;
+        last=input[0];
+        for(let i=2;i<=input.length-1;i+=2)
+        {
+            if(last==input[i])
+                signal++;
+            else
+            {
+                (max>=signal)||(max=signal);
+                signal=1;
+                last=input[i];
+            }
+        }
+
+        (max>=signal)|(max=signal);
+
+        result.value+=max;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+body{
+    transition:all 2s ease-in;
+
+    /*1*/
+    /*opacity:0;*/
+
+    /*2*/
+    /*position:absolute;*/
+    /*top:0;*/
+    /*transform: rotatey(90deg);*/
+
+    /*3*/
+    /*position:relative;*/
+    /*bottom:200vh;*/
+
+
+}
+main{
+    /*4*/
+    position:relative;
+    right:-100vw;
+    transition:right 2s ease-in;
+}
+*{
+    /*transition:bottom 2s ease-in;*/
+
+    /*transform:rotatey(90deg);*/
+}

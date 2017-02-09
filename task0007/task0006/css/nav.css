@@ -1,0 +1,52 @@
+﻿
+/*导航栏*/
+nav{
+    position:fixed;
+    top:0;
+    z-index:99;
+    width:100%;
+    display:inline;
+}
+nav{
+    background-color:white;
+
+}
+
+.nav--ul{
+    display:inline-flex;
+    width:32%;
+}
+.nav--li{
+    display:inline-block;
+    bottom:10%;
+    text-align:center;
+    cursor:pointer;
+    flex-grow:1;
+}
+.nav--li{
+    color:#ffd800;
+    font-weight:900;
+    transition:all 0.5s ease-in;
+}
+.nav--li:hover{
+    background-color:#a9a9a9;
+}
+.nav--index{
+    display:inline-block;
+    text-align:center;
+    width:66%;
+    flex-grow:4;
+    cursor:pointer;
+}
+.nav--img{
+    vertical-align:bottom;}
+a{
+    color:inherit;
+    text-decoration:none;
+}
+.nav--li:first-child{
+    border-left:none;
+} 
+.nav--li:last-child{
+    border-right:none;
+}

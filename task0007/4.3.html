@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leetcode的习题1</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/css.css" />
+</head>
+
+<body>
+<div>
+    <h1>原题</h1>
+    <p>
+        Write a program that outputs the string representation of numbers from 1 to n.
+        But for multiples of three it should output “Fizz” instead of the number and
+        for the multiples of five output “Buzz”. For numbers which are multiples of
+        both three and five output “FizzBuzz”.</p>
+    <h1>解</h1>
+    <div>
+        <lable>输入:<input id="x" /></lable>
+        <button id="button">结果</button>
+        <input id="result" />
+    </div>
+</div>
+<script>
+    var button =document.getElementById('button');
+    var result = document.getElementById('result');
+    button.onclick=function()
+    {
+        let input = Number(document.getElementById('x').value);
+
+        for(let i=1;i<=input;i++)
+        {
+            let a,b,c;
+            switch(((i%3==0)<<1)|(i%5==0))
+            {
+                case 1:result.value+=' "Buzz"';break;
+                case 2:result.value+=' "Fizz"';break;
+                case 3:result.value+=' "FizzBuzz"';break;
+                default:result.value+=' "'+i+'"';
+            }
+        }
+    }
+</script>
+</body>
+</html>
